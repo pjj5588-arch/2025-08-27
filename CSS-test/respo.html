@@ -1,0 +1,43 @@
+<html>
+<style>
+    html {
+        font-size: 16px;
+    }
+    p {
+        font-size: 1em;
+    }
+    .content1 {
+        font-size: 1.5em;
+    }
+    .content2 {
+        font-size: 1.02em;
+        width: 1600px;
+        border: 1px solid #ccc;
+    }
+    .top {
+        width: 100%;
+        height: auto;
+        /* 세로는 비율에 맞게 */
+        display: block;
+        /* 여백 제거 */
+    }
+    @media screen and (max-width: 640px) {
+        body {
+            background-color: orange;
+        }
+        .notview{
+            display: none;
+        }
+    }
+</style>
+<body>
+    <h1>TEST</h1>
+    <p>Test Test Test Test Test Test Test Test Test 1em</p>
+    <div class="content1">
+        <p>Test Test Test Test Test Test Test Test Test 1.5em</p>
+    </div>
+    <div class="content2">
+        <img src="/images/login-bg.png" class="top notview">
+    </div>
+</body>
+</html>

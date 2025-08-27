@@ -1,0 +1,48 @@
+  /* === Reset CSS === */
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+      html, body, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      figure, dl, dd, ul, ol, li,
+      fieldset, legend, textarea, input, select, button {
+        margin: 0;
+        padding: 0;
+      }
+      html, body {
+        height: 100%;
+      }
+      body {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+      }
+      ul, ol {
+        list-style: none;
+      }
+      img, video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      button, input, select, textarea {
+        font: inherit;
+        color: inherit;
+        border: none;
+        background: none;
+      }
+      button {
+        cursor: pointer;
+      }
+      textarea {
+        resize: vertical;
+      }
+      [hidden] {
+        display: none !important;
+      }

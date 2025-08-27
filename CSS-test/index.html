@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>TUI Grid Sort Example</title>
+  <link rel="stylesheet" href="https://uicdn.toast.com/grid/latest/tui-grid.css" />
+</head>
+<body>
+  <h1>TUI Grid 정렬 예제</h1>
+  <div id="grid" style="margin:20px;"></div>
+  <script src="https://uicdn.toast.com/grid/latest/tui-grid.js"></script>
+  <script>
+    const mockData = [
+      { id: 1, name: '홍길동', age: 25, city: '서울' },
+      { id: 2, name: '김철수', age: 30, city: '부산' },
+      { id: 3, name: '이영희', age: 28, city: '대구' },
+      { id: 4, name: '박영수', age: 35, city: '인천' },
+      { id: 5, name: '최민호', age: 22, city: '광주' },
+      { id: 6, name: '오세훈', age: 40, city: '대전' },
+      { id: 7, name: '장서연', age: 29, city: '울산' },
+      { id: 8, name: '정우성', age: 33, city: '세종' },
+      { id: 9, name: '한예슬', age: 27, city: '강릉' },
+      { id: 10, name: '이도현', age: 31, city: '제주' }
+    ];
+    const grid = new tui.Grid({
+      el: document.getElementById('grid'),
+      scrollX: false,
+      scrollY: true,
+      rowHeaders: ['rowNum'],
+      pageOptions: {
+        useClient: true,
+        perPage: 10
+      },
+      columns: [
+        { header: 'ID', name: 'id', width: 60, sortable: true },
+        { header: '이름', name: 'name', sortable: true },
+        { header: '나이', name: 'age', width: 80, sortable: true },
+        { header: '도시', name: 'city', sortable: true }
+      ],
+      data: mockData
+    });
+  </script>
+</body>
+</html>

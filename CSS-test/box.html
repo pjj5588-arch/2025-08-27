@@ -40,4 +40,23 @@
         <button class="btn-save">Logout</button>
     </div>
 </body>
+
+<script>
+
+function movewin() {
+    const newWin = window.open("http://www.naver.com", "popup", width=400,height=300);
+    newWin.moveTo(1000, 1000);
+}
+
+movewin()
+
+function closewin() {
+
+    newWin.close()
+}
+
+closewin()
+</script>
+
+
 </html>
